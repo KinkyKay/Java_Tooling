@@ -1,0 +1,39 @@
+$$ Syntactic Constructs:
+    - Text strings (unicode)
+    - Markup and data
+    - Case-sensitivity
+    - White space: tab, spaces, CR, LF,...
+    - Names:
+        * unicode
+        * no space
+        * start with A-Z, a-z, _ , :
+
+$$ Documents Nodes:
+    A Document node is a complete document, including the XML Declaration. All XML documents
+    may (and should!) begin with a single XML declaration.
+    The document root of each XML document is also the point of attachment for the document's
+    description using a DTD or Schema.
+
+$$ Document fragments:
+    A document fragment is a part of a document that might or might not be well formed. It
+    can be a group of elements with no root element.
+
+$$ Document types:
+    An XML document may contain a DOCTYPE declaration. It contains information that tells the
+    processor about the Document Type Definition (DTD). The first argument refers to the root
+    element of the XML document. These two must match because the DTD can describe only specific
+    structures.
+    Example: DocTypeExample.xml
+
+$$ Document types - PUBLIC:
+    The PUBLIC identifier is used to reference a DTD.
+    Example: DocTypePublicExample.xml
+
+$$ Document types - SYSTEM:
+    An XML parser may try to generate a URI using the PUBLIC identifier. If it is unable eo do so,
+    the SYSTEM identifier may be used.
+    Example: DocTypeSystemExample.xml
+
+
+
+

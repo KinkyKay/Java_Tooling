@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CompanyList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="CompanyListZipcode.xsd"
+             xmlns="www.abis.be" xsi:schemaLocation="www.abis.be" >
+    <Company>
+        <CompanyName/>
+        <CompanyAddress/>
+        <PersonList>
+            <Person>
+                <Name>
+                    <FirstName>K.</FirstName>
+                    <LastName>LOOSE</LastName>
+                </Name>
+                <Function>CONSULTANT</Function>
+            </Person>
+        </PersonList>
+    </Company>
+    <Company>
+        <CompanyName>ABIS N.V.</CompanyName>
+        <CompanyAddress postcode="3000">LEUVEN</CompanyAddress>
+        <PersonList>
+            <Person>
+                <Name>
+                    <FirstName>JAN</FirstName>
+                    <LastName>SMITHS</LastName>
+                </Name>
+                <Function>TRAINING CONSULT</Function>
+            </Person>
+            <Person>
+                <Name>
+                    <FirstName>ANN</FirstName>
+                    <LastName>DE KEYSER</LastName>
+                </Name>
+                <Function>PROGRAMMER</Function>
+            </Person>
+            <Person>
+                <Name>
+                    <FirstName>PETER</FirstName>
+                    <LastName>TAVERNIER</LastName>
+                </Name>
+                <Function>PROGRAMMER</Function>
+            </Person>
+        </PersonList>
+    </Company>
+    <Company>
+        <CompanyName>COMPUTRAIN</CompanyName>
+        <CompanyAddress postcode="2000 AC">ROTTERDAM</CompanyAddress>
+        <PersonList>
+            <Person>
+                <Name>
+                    <FirstName>GERT</FirstName>
+                    <LastName>VAN HEIJKOOP</LastName>
+                </Name>
+                <Function>ANALYST</Function>
+            </Person>
+            <Person>
+                <Name>
+                    <FirstName>RUUD</FirstName>
+                    <LastName>NIEHOF</LastName>
+                </Name>
+                <Function>EDP-MANAGER</Function>
+            </Person>
+        </PersonList>
+    </Company>
+</CompanyList>

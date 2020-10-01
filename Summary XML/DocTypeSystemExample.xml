@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE personList SYSTEM "person.dtd">
+
+<personList>
+    <person>
+        <name>
+            <firstName>John</firstName>
+            <lastName>Williams</lastName>
+        </name>
+    </person>
+    <person>
+        <name>
+            <firstName>Mary</firstName>
+            <lastName>Jones</lastName>
+        </name>
+    </person>
+</personList>
+

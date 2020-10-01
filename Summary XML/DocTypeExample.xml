@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE personList[<!ELEMENT personList (person)+>
+        <!ELEMENT person (name)>
+        <!ELEMENT name (firstName, lastName)>
+        <!ELEMENT firstName (#PCDATA)>
+        <!ELEMENT lastName (#PCDATA)>]>
+
+<personList>
+    <person>
+        <name>
+            <firstName>John</firstName>
+            <lastName>Williams</lastName>
+        </name>
+    </person>
+    <person>
+        <name>
+            <firstName>Mary</firstName>
+            <lastName>Jones</lastName>
+        </name>
+    </person>
+</personList>
+

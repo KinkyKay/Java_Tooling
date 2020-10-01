@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CompaniesAndPersons>
+    <CompanyList>
+        <Company Nr="1">
+            <Name>ABIS</Name>
+            <Address>LEUVEN</Address>
+            <Zipcode>3000</Zipcode>
+        </Company>
+        <Company Nr="2">
+            <Name>COMPUTRAIN</Name>
+            <Address>ROTTERDAM</Address>
+        </Company>
+    </CompanyList>
+    <PersonList>
+        <Person Nr="0">
+            <Name>
+            <FirstName>K.</FirstName>
+            <LastName>LOOZE</LastName>
+            </Name>
+        </Person>
+        <Person Nr="1" Employer="1">
+            <FirstName>JAN</FirstName>
+            <LastName>SMITHS</LastName>
+        </Person>
+        <Person Nr="2" Employer="1">
+            <FirstName>ANN</FirstName>
+            <LastName>DE KEYSER</LastName>
+        </Person>
+        <Person Nr="3" Employer="1">
+            <FirstName>PETER</FirstName>
+            <LastName>TAVERNIER</LastName>
+        </Person>
+        <Person Nr="4" Employer="2">
+            <FirstName>GERT</FirstName>
+            <LastName>VAN HEIJKOOP</LastName>
+        </Person>
+        <Person Nr="5" Employer="2">
+            <FirstName>RUUD</FirstName>
+            <LastName>NIEHOF</LastName>
+        </Person>
+    </PersonList>
+</CompaniesAndPersons>

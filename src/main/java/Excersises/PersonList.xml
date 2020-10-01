@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PersonList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="PersonList.xsd">
+    <Person>
+        <Name>
+            <FirstName>JAN</FirstName>
+            <LastName>SMITHS</LastName>
+        </Name>
+        <Function>TRAINING CONSULT</Function>
+        <Company>
+            <CompanyName>ABIS Training &amp; Consulting</CompanyName>
+            <CompanyAddress>LEUVEN</CompanyAddress>
+        </Company>
+    </Person>
+    <Person>
+        <Name>
+            <FirstName>PETER</FirstName>
+            <LastName>TAVERNIER</LastName>
+        </Name>
+        <Function>PROGRAMMER</Function>
+        <Company>
+            <CompanyName>ABIS N.V.</CompanyName>
+            <CompanyAddress>LEUVEN</CompanyAddress>
+        </Company>
+    </Person>
+    <Person>
+        <Name>
+            <FirstName>ANN</FirstName>
+            <LastName>DE KEYSER</LastName>
+        </Name>
+        <Function>PROGRAMMER</Function>
+        <Company>
+            <CompanyName>ABIS N.V.</CompanyName>
+            <CompanyAddress>LEUVEN</CompanyAddress>
+        </Company>
+    </Person>
+    <Person>
+        <Name>
+            <FirstName>RUUD</FirstName>
+            <LastName>NIEHOF</LastName>
+        </Name>
+        <Function>EDP-MANAGER</Function>
+        <Company>
+            <CompanyName>COMPUTRAIN</CompanyName>
+            <CompanyAddress>ROTTERDAM</CompanyAddress>
+        </Company>
+    </Person>
+    <Person>
+        <Name>
+            <FirstName>GERT</FirstName>
+            <LastName>VAN HEIJKOOP</LastName>
+        </Name>
+        <Function>ANALYST</Function>
+        <Company>
+            <CompanyName>COMPUTRAIN</CompanyName>
+            <CompanyAddress>ROTTERDAM</CompanyAddress>
+        </Company>
+    </Person>
+    <Person>
+        <Name>
+            <FirstName>MARIA</FirstName>
+            <LastName>PEREZ</LastName>
+        </Name>
+        <Function>MANAGER</Function>
+        <Company>
+            <CompanyName>DATAWISHES N.V.</CompanyName>
+            <CompanyAddress>BRUSSEL</CompanyAddress>
+        </Company>
+    </Person>
+    <Person>
+        <Name>
+            <FirstName>F.</FirstName>
+            <LastName>LIVIER</LastName>
+        </Name>
+        <Function>ANALYST</Function>
+        <Company>
+            <CompanyName>DATAWISHES N.V.</CompanyName>
+            <CompanyAddress>BRUSSEL</CompanyAddress>
+        </Company>
+    </Person>
+    <Person>
+        <Name>
+            <FirstName>K.</FirstName>
+            <LastName>LOOSE</LastName>
+        </Name>
+        <Function>CONSULTANT</Function>
+        <Company>
+            <CompanyName>-</CompanyName>
+            <CompanyAddress>-</CompanyAddress>
+        </Company>
+    </Person>
+    <Person>
+        <Name>
+            <FirstName>PHILIP</FirstName>
+            <LastName>BENOIT</LastName>
+        </Name>
+        <Function>SOFTWARE ENGINEER</Function>
+        <Company>
+            <CompanyName>LOC COMPUTER CORP</CompanyName>
+            <CompanyAddress>BRUSSEL</CompanyAddress>
+        </Company>
+    </Person>
+</PersonList>

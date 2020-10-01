@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CompanyList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SalamiSliceCompanyList.xsd">
+	<Company>
+		<CompanyName>ABIS N.V.</CompanyName>
+		<CompanyAddress>LEUVEN</CompanyAddress>
+		<Boss>
+			<Name>
+				<FirstName>JAN</FirstName>
+				<LastName>SMITHS</LastName>
+			</Name>
+			<Salary>2450</Salary>
+			<Birthday>1947-03-24</Birthday>
+		</Boss>
+		<Employees>
+			<Employee>
+				<Name>
+					<FirstName>JOS</FirstName>
+					<LastName>BOSMANS</LastName>
+				</Name>
+				<Salary>1450</Salary>
+				<Birthday>1975-09-02</Birthday>
+			</Employee>
+			<Employee>
+				<Name>
+					<FirstName>ANN</FirstName>
+					<LastName>DE KEYSER</LastName>
+				</Name>
+				<Salary>1550</Salary>
+				<Birthday>1952-05-24</Birthday>
+			</Employee>
+			<Employee>
+				<Name>
+					<FirstName>PETER</FirstName>
+					<LastName>TAVERNIER</LastName>
+				</Name>
+				<Salary>2445</Salary>
+				<Birthday>1953-04-24</Birthday>
+			</Employee>
+		</Employees>
+	</Company>
+	<Company>
+		<CompanyName>Computrain</CompanyName>
+		<CompanyAddress>Rotterdam</CompanyAddress>
+		<Boss>
+			<Name>
+				<FirstName>Henk</FirstName>
+				<LastName>De Bruyn</LastName>
+			</Name>
+			<Salary>3450</Salary>
+			<Birthday>1949-09-18</Birthday>
+		</Boss>
+		<Employees>
+			<Employee>
+				<Name>
+					<FirstName>Jan Peter</FirstName>
+					<LastName>Balkenende</LastName>
+				</Name>
+				<Salary>1650</Salary>
+				<Birthday>1963-11-24</Birthday>
+			</Employee>
+		</Employees>
+	</Company>
+</CompanyList>

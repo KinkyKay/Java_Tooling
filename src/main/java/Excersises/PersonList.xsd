@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="PersonList">
+        <xs:complexType><xs:sequence>
+            <xs:element name="Person" maxOccurs="unbounded">
+                    <xs:complexType><xs:sequence>
+                        <xs:element name="Name">
+                            <xs:complexType><xs:sequence>
+                                <xs:element name="FirstName"/>
+                                <xs:element name="LastName"/>
+                            </xs:sequence></xs:complexType>
+                        </xs:element>
+                        <xs:element name="Function"/>
+                        <xs:element name="Company" minOccurs="0">
+                            <xs:complexType><xs:sequence>
+                                <xs:element name="CompanyName"/>
+                                <xs:element name="CompanyAddress"/>
+                            </xs:sequence></xs:complexType>
+                        </xs:element>
+                    </xs:sequence></xs:complexType>
+            </xs:element>
+        </xs:sequence></xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- encoding indicated in a xml declaration -->
+
+<!--* Hypertext Markup Language (HTML):
+        HTML is presenting data in a webbrowser in such a way that it was easy for a web developer to write it.
+    * Hypertext Transfer Protocol (HTTP)
+    * Extensible Markup Language (XML) is a more universal standard for expressing structure
+        and content, so that machines can understand it and interact without human intervention.
+    * The 'old' way:
+        Text files have been used for long to store and exchange structured information. The
+        information can be stored where every field is separated from the next by some
+        separator or delimiter character (blank, comma, tab)
+        Example:
+            1............11.........21..........31..........41..........51............61........
+            Jean       Dupont      1200       3000        Leuven     Belgium
+            Ann        Van Halen   2400       2000        Antwerpen  Belgium
+            Josette    's Meyers   1800       1000-AX     Amsterdam  The Netherlands
+
+    * The XML Way: example -->
+    <PersonList>
+        <Person>
+            <FirstName>Jean</FirstName>
+            <LastName>Dupont</LastName>
+            <Salary>1200</Salary>
+            <PostalCode>3000</PostalCode>
+            <City>Leuven</City>
+            <Country>Belgium</Country>
+        </Person>
+        <Person>
+            <FirstName>Ann</FirstName>
+            <LastName>Van Halen</LastName>
+            <Salary>2400</Salary>
+            <PostalCode>2000</PostalCode>
+            <City>Antwerpen</City>
+            <Country>Belgium</Country>
+        </Person>
+        <Person>
+            <FirstName>Josette</FirstName>
+            <LastName>'s Meyers</LastName>
+            <Salary>1800</Salary>
+            <PostalCode>1000-AX</PostalCode>
+            <City>The Netherlands</City>
+        </Person>
+    </PersonList>
+
+<!--* Unicode:
+      Unicode provides a unique number for every character, no matter what the platform,
+      no matter what the program, no matter what the language.
+      Example of a declaration => line 1
+
+    * XML Syntax:
+      - Case sensitive
+      - Unicode character set (UTF-8)
+      - special characters:
+            <   &lt;
+            >   &gt;
+            &   &amp;
+            '   &apos;
+            "   &quot;
+
+    * Names:
+        - start with standard letter or underscore (_) or colon (:)
+        - no spaces
+        - no xml..., XML..., xML...)
+        - case sensitive
+
+    * Well-formedness:
+        - one root element
+        - properly nested elements
+
+    * Data oriented:
+      The document contains elements with very predictable structured data, such as you
+      would find in a relational database.
+      Example: PersonList.xml
+
+    * Document oriented:
+      The document contains semi-structured text like a book or a technical manual, containing
+      elements like <paragraph> and <chapter>. Typical in these documents is the occurrence of
+      mixed content.
+      Example: -->
+        <PLAY>
+            <TITLE>The Tragedy of Hamlet, Prince of Denmark</TITLE>
+            <PERSONAE>
+                <TITLE>Dramatis Personae</TITLE>
+                <PERSONA>Claudius</PERSONA>
+                <PERSONA>Hamlet</PERSONA>
+                <PERSONA>Polonius</PERSONA>
+                <PGROUP>
+                    <PERSONA>Rosencrantz</PERSONA>
+                    <PERSONA>Guildenstern</PERSONA>
+                    <GRPDESCR>courtiers</GRPDESCR>
+                </PGROUP>
+                <PERSONA>Ophelia</PERSONA>
+                <PERSONA>Ghost of Hamlet's Father</PERSONA>
+            </PERSONAE>
+            <ACT>
+                <TITLE>Act I</TITLE>
+                <SCENE>
+                    <TITLE>SCENE I. Elsinore, before the castle.</TITLE>
+                    <STAGEDIR>FRANCISCO at his post. Enter BERNARDO</STAGEDIR>
+                    <SPEECH>
+                        <SPEAKER>BERNARDO</SPEAKER>
+                        <LINE>Who's there?</LINE>
+                    </SPEECH>
+                    <SPEECH>
+                        <SPEAKER>FRANCISCO</SPEAKER>
+                        <LINE>Nay, answer me: stand, and unfold yourself.</LINE>
+                    </SPEECH>
+                </SCENE>
+            </ACT>
+        </PLAY>
+
+<!--* SGML = Standard Generic Markup Language:
+        - lot of features
+        - complicated
+        - hard to implement in a web context
+
+    * HTML (1990):
+        - defines layout & presentation, not structure
+        - is not extensible (predefined tags)
+        - can not be validated
+    * The reaction of the W3C:
+        - cascading style sheets (CSS)
+        - Extensible Markup Language (XML)
+    * XML (1998):
+        - defines structure & semantics
+        - extensible
+        - can be validated (DTD, Schema,..) -->
+
+
+
+
+
+
+
+
+
