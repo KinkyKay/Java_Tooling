@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<person>
+    <age>47</age>
+    <income valuta="EUR">2000</income>
+    <name firstName="Mary" lastName="Jones"></name>
+</person>
