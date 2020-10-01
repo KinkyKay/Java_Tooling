@@ -26,7 +26,7 @@ $$ Document types:
     Example: DocTypeExample.xml
 
 $$ Document types - PUBLIC:
-    The PUBLIC identifier is used to reference a DTD.
+    The PUBLIC identifier is used to reference a DTD. A DTD is outdated and replaced by XML.
     Example: DocTypePublicExample.xml
 
 $$ Document types - SYSTEM:
@@ -34,6 +34,39 @@ $$ Document types - SYSTEM:
     the SYSTEM identifier may be used.
     Example: DocTypeSystemExample.xml
 
+$$ Elements:
+    - Root Element (Document Element) Example: IntroducingXML.xml => <personList>
+    - Child Elements (descendants) Example: IntroducingXML.xml => <person>
+    - Empty Element Example: <middleName></middleName>
 
+$$ Attributes:
+    - can contain extra information of your element
+    - metadata
+    Example: Attributes.xml
 
+$$ Text:
+    Any text within another node is a text node. white space characters have no significance in between
+    elements so that an entire document could be on a single line.
+    Example: Text.xml
 
+$$ Entities, Entity references and Notations
+    - Character entity references:
+            &#169;   => displays the copyright symbol
+            &#8364;  => displays the euro sign
+    - Entity references:
+            &amp;    => displays &
+            &lt;     => displays <
+            &gt;     => displays >
+            &apos;   => displays '
+            &quot;   => displays "
+
+$$ Processing Instructions (PI's), comments and CDATA Sections
+    - PI : A PI allows us to leave specific instructions for an specific processor/program.
+            Example: <?Dumb-Formatter FONT="16pt"?>
+
+    - comments:
+            Example: <!--This is the way to have comments in your XML or DTDs-->
+
+    - CDATA: CDATA sections are a method of including text that contains characters that would otherwise be
+             recognized as mark-up.
+             Example: <![CDATA[John&Mary's kids: <name>Rick</name>&<name>Jane</name> ]]>

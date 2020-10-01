@@ -1,0 +1,44 @@
+The Document Type Definition (DTD) was the only way of constraining an XML document.
+From the 21st century, a more sophisticated standard emerged: the XML Schema.
+Now days the XML Schema is the official standard for validating XML documents.
+
+$$ Problems with DTD:
+    - different syntax (from SGML)
+    - programmatic processing of their metadata is difficult
+    - not extensible
+    - no support datatypes
+    - no support inheritance
+
+$$ Advantages of XML Schema:
+    - uses XML syntax
+    - element and attribute definitions are possible
+    - open content models can be defined
+    - greater flexibility for content models
+    - provide a richer set of datatypes
+    - allow built-in and user-defined datatypes to be created
+
+$$ XML Schema specification:
+    There are three parts, there is the primer, which introduces the key topics in schemas,
+    and two reference sections: structures and datatypes.
+    Datatypes are the basic building blocks.
+    Structures are more like the compounds and are used to describe the element, attribute
+    and validation structure of a document type.
+
+$$ Basic syntax elements:
+    - Schemas begin with the <schema> tag.
+      The xmlns attribute defines the namespace for schemas. This means that the language for
+      defining schemas uses the predefined tags of that namespace.
+      Example:
+            <?xml version="1.0" encoding="UTF-8"?>
+            <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                ...
+            </xsd:schema>
+
+    - Elements and attributes must be defined in a structure.
+      Elements are defined with attributes on the element tag.
+            type        specifies the element type
+            minOccurs   specifies the number of occurrences of the element in this model.
+                        0 makes the element optional. Default is 1.
+            maxOccurs   maximum number of occurrences of the element in this model.
+                        'Unbounded' means any number of times. Default is 1.
+
