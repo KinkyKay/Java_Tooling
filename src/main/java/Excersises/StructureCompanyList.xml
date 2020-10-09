@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureCompanyList>
+    <Company>
+        <CompanyName>ABIS N.V.</CompanyName>
+        <CompanyAddress>LEUVEN</CompanyAddress>
+        <Boss>
+            <BossName>
+                <FirstName>JAN</FirstName>
+                <LastName>SMITHS</LastName>
+            </BossName>
+            <Salary>2450</Salary>
+            <Birthday>1947-03-24</Birthday>
+        </Boss>
+        <Employees>
+            <EmployeeName>
+                <FirstName>JOS</FirstName>
+                <LastName>BOSMANS</LastName>
+            </EmployeeName>
+            <Salary>1450</Salary>
+            <Birthday>1975-09-02</Birthday>
+        </Employees>
+        <Employees>
+            <EmployeeName>
+                <FirstName>ANN</FirstName>
+                <LastName>DE KEYSER</LastName>
+            </EmployeeName>
+            <Salary>1550</Salary>
+            <Birthday>1952-05-24</Birthday>
+        </Employees>
+        <Employees>
+            <EmployeeName>
+                <FirstName>PETER</FirstName>
+                <LastName>TAVERNIER</LastName>
+            </EmployeeName>
+            <Salary>2445</Salary>
+            <Birthday>1953-04-24</Birthday>
+        </Employees>
+    </Company>
+</StructureCompanyList>

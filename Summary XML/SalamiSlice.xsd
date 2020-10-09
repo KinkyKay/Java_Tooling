@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="CompanyList">
+        <xs:complexType><xs:sequence>
+            <xs:element name="Company" maxOccurs="unbounded">
+                <xs:complexType><xs:sequence>
+                    <xs:element name="CompanyName"/>
+                    <xs:element name="CompanyAddress"/>
+                    <xs:element name="Boss">
+                        <xs:complexType><xs:sequence>
+                            <xs:element ref="Name"/>
+                            <xs:element ref="Salary"/>
+                            <xs:element ref="Birthday"/>
+                        </xs:sequence></xs:complexType>
+                    </xs:element>
+                    <xs:element name="Employees" maxOccurs="unbounded">
+                        <xs:complexType><xs:sequence>
+                            <xs:element ref="Name"/>
+                            <xs:element ref="Salary"/>
+                            <xs:element ref="Birthday"/>
+                        </xs:sequence></xs:complexType>
+                    </xs:element>
+                </xs:sequence></xs:complexType>
+            </xs:element>
+        </xs:sequence></xs:complexType>
+    </xs:element>
+    <xs:element name="Name">
+        <xs:complexType><xs:sequence>
+            <xs:element name="FirstName"/>
+            <xs:element name="LastName"/>
+        </xs:sequence></xs:complexType>
+    </xs:element>
+    <xs:element name="Salary"/>
+    <xs:element name="Birthday"/>
+</xs:schema>

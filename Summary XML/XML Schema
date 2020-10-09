@@ -41,4 +41,53 @@ $$ Basic syntax elements:
                         0 makes the element optional. Default is 1.
             maxOccurs   maximum number of occurrences of the element in this model.
                         'Unbounded' means any number of times. Default is 1.
+      Example:
+            <xsd:element name="title" type="xsd:string" minOccurs="0"/>
+
+    - Defining an attribute
+      Attributes are defined with attributes on the attribute tag:
+            name        Attribute name
+            default     default value
+            use         whether this is a "required" or "optional" attribute
+      Example:
+            <xsd:attribute name="countrycode" type="xsd:string" use="required"/>
+
+$$ Example of a Schema:
+    - The www.w3.org/2001/XMLSchema namespace is used for identifying the Schema itself.
+    - The www.w3.org/2001/XMLSchema-instance namespace is used for Schema extensions in documents
+    - The element xsi:noNamespaceSchemaLocation defines the location of a W3C Schema without a target namespace.
+
+$$ Defining structure of a schema:
+    The element and attribute tags must be combined to define the structure. There are three well known schema
+    design 'patterns', which are often combined:
+    1. Russian Doll Design or local components/definitions
+        The Russian Doll Design tightly follows the structure of an XML document. One of the key features is to
+        define each element and attribute within its context.
+        Example: RussianDollDesign.xsd
+    2. Salami Slice or global components
+        The elements and attributes are defined separately and are reffered to, to build up the structure.
+        Example: SalamiSlice.xsd
+    3. Venetian Blind or global types
+        Complex and simple (data)types are made and used to define the elements.
+        Example: VenitianBlind.xsd
+
+$$ Compositors:
+    1. Sequence:
+        The xs: sequence compositor defines ordered groups of elements. The order in the XML document must be the
+        same as the order in which the elements appear in the schema.
+        Example: Sequence.xsd
+    2. Choice:
+        The choice compositor describes a choice between several possible elements or groups of elements.
+        Example: country.xml - country.xsd
+    3. All:
+        All defines an unordered set of elements. The elements can appear in any order but there are a few restrictions:
+        - the elements can appear only as unique children at the top of a content model.
+        - their children can be only xsd:element definitions or references and cannot have a cardinality greater than one.
+
+$$ Groups:
+
+
+
+
+
 
