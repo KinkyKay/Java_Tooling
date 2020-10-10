@@ -85,6 +85,43 @@ $$ Compositors:
         - their children can be only xsd:element definitions or references and cannot have a cardinality greater than one.
 
 $$ Groups:
+    Example: groups.xsd
+    A group is a definition that contains elements or attributes. They are containers holding a set of elements or
+    attributes that can be used to describe complex types.
+
+$$ Types:
+    - ComplexTypes = with elements and/or attributes:
+            * simple content (Example: SimpleContent.xsd)
+                + only text nodes (no children)
+                + can be extended (with attributes)
+            * mixed content: elements and text (MixedContent.xsd)
+      Example empty content elements: Empty.xsd
+
+
+    - SimpleTypes = no elements, no attributes:
+            * primitive data types (xs:string, xs:date,...)
+            * derived data types:
+                + derived from the primitive data types by restriction, union, list
+                + facets: maxLength, enumeration, pattern
+      Example: SimpleTypes.xml
+
+    - Warning:
+            * elements default type = xs:anyType
+            * attributes default type = xs:anySimpleType
+
+$$ Contraints:
+    1. Unique constraints
+        The first is declared with the xs:unique element. The two paths defined in the uniqueness
+        constraint are evaluated relative to the context node.
+        The first path is defined by the selector element. The purpose is to define the element which
+        has the uniqueness constraint.
+        The second path, specified in the xs:field element is evaluated relative to the element identified
+        by the xs:selector, and can be an element or an attribute node.
+        Example: CountryUniqueConstraints.xml - CountryUniqueConstraints.xsd
+
+    2. Key constraints
+
+    
 
 
 

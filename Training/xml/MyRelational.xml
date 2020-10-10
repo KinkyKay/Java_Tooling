@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompaniesAndPersons xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.abis.be SchemaRelational.xsd" xmlns="www.abis.be">
+	<PersonList>
+		<Person PersonId="1" CompanyId="1">
+			<Name>
+				<LastName>Smiths</LastName>
+				<FirstName>Jan</FirstName>
+				<FirstName>Peter</FirstName>
+				<FirstName>William</FirstName>
+			</Name>
+			<Function>Training Consult</Function>
+		</Person>
+		<Person PersonId="2" CompanyId="1">
+			<Name>
+				<LastName>Tavernier</LastName>
+				<FirstName>Peter</FirstName>
+			</Name>
+			<Function>Programmer</Function>
+		</Person>
+		<Person PersonId="3" CompanyId="1">
+			<Name>
+				<LastName>De Keyser</LastName>
+				<FirstName>Ann</FirstName>
+				<FirstName>Sophie</FirstName>
+			</Name>
+			<Function>Programmer</Function>
+		</Person>
+		<Person PersonId="4" CompanyId="2">
+			<Name>
+				<LastName>Niehof</LastName>
+				<FirstName>Ruud</FirstName>
+			</Name>
+			<Function>EDP-manager</Function>
+		</Person>
+		<Person PersonId="5" CompanyId="2">
+			<Name>
+				<LastName>Van Heijkoop</LastName>
+				<FirstName>Gert</FirstName>
+			</Name>
+			<Function>Analyst</Function>
+		</Person>
+		<Person PersonId="6" CompanyId="3">
+			<Name>
+				<LastName>Perez</LastName>
+				<FirstName>Maria</FirstName>
+			</Name>
+			<Function>Manager</Function>
+		</Person>
+		<Person PersonId="7" CompanyId="3">
+			<Name>
+				<LastName>Livier</LastName>
+				<FirstName>F.</FirstName>
+			</Name>
+			<Function>Analyst</Function>
+		</Person>
+		<Person PersonId="8" CompanyId="0">
+			<Name>
+				<LastName>Loose</LastName>
+				<FirstName>K.</FirstName>
+			</Name>
+			<Function>Consultant</Function>
+		</Person>
+		<Person PersonId="9" CompanyId="4">
+			<Name>
+				<LastName>Benoit</LastName>
+				<FirstName>Filip</FirstName>
+			</Name>
+			<Function>Software Engineer</Function>
+		</Person>
+	</PersonList>
+	<abis:CompanyList xmlns:abis="www.abis.be">
+		<abis:Company CompanyId="1">
+			<abis:CompanyName>Abis N.V.</abis:CompanyName>
+			<abis:CompanyAddress>Leuven</abis:CompanyAddress>
+		</abis:Company>
+		<abis:Company CompanyId="2">
+			<abis:CompanyName>Computrain</abis:CompanyName>
+			<abis:CompanyAddress>Rotterdam</abis:CompanyAddress>
+		</abis:Company>
+		<abis:Company CompanyId="3">
+			<abis:CompanyName>Datawishes N.V.</abis:CompanyName>
+			<abis:CompanyAddress>Brussel</abis:CompanyAddress>
+		</abis:Company>
+		<abis:Company CompanyId="4">
+			<abis:CompanyName>Loc Computer Corp.</abis:CompanyName>
+			<abis:CompanyAddress>Brussel</abis:CompanyAddress>
+		</abis:Company>
+		<abis:Company CompanyId="0">
+			<abis:CompanyName>-</abis:CompanyName>
+			<abis:CompanyAddress>-</abis:CompanyAddress>
+		</abis:Company>
+	</abis:CompanyList>
+</CompaniesAndPersons>

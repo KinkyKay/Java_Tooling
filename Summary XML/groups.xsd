@@ -1,0 +1,38 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:group name="location">
+        <xsd:sequence>
+            <xsd:element name="countryName" type="xsd:string"/>
+            <xsd:element name="continent" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:group>
+
+    <xsd:element name="title" type="xsd:string"/>
+    <xsd:element name="name" type="xsd:string"/>
+    <xsd:element name="since" type="xsd:date"/>
+
+    <xsd:attributeGroup name="countryAttributes">
+        <xsd:attribute name="countryCode" type="xsd:string"/>
+        <xsd:attribute name="countryTelephoneCode" type="xsd:string"/>
+    </xsd:attributeGroup>
+
+    <xsd:element name="countryLeader">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="title"/>
+                <xsd:element ref="name"/>
+                <xsd:element ref="since"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="country">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:group ref="location"/>
+                <xsd:element ref="countryLeader"/>
+            </xsd:sequence>
+            <xsd:attributeGroup ref="countryAttributes"/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

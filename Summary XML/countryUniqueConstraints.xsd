@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="country">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="countryName"/>
+                <xsd:element name="countryLeader" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="firstName"/>
+                            <xsd:element name="number"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+        <xsd:unique name="oneLeader">
+            <xsd:selector xpath="countryLeader"/>
+            <xsd:field xpath="firstName"/>
+            <xsd:field xpath="number"/>
+        </xsd:unique>
+    </xsd:element>
+</xsd:schema>

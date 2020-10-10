@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="country" type="xsd:string">
+        <xsd:complexType><xsd:sequence>
+            <xsd:element name="countryName"/>
+            <xsd:element name="continent"/>
+            <xsd:element name="countryLeader">
+                <xsd:complexType><xsd:sequence>
+                    <xsd:element ref="title"/>
+                        <xsd:choice>
+                        <xsd:element ref="name"/>
+                        <xsd:sequence>
+                            <xsd:element name="firstName" type="xsd:string"/>
+                            <xsd:element name="lastName" type="xsd:string"/>
+                        </xsd:sequence>
+                        </xsd:choice>
+                    <xsd:element ref="since"/>
+                </xsd:sequence></xsd:complexType>
+            </xsd:element>
+        </xsd:sequence></xsd:complexType>
+    </xsd:element>
+    <xsd:element name="title"></xsd:element>
+    <xsd:element name="name"></xsd:element>
+    <xsd:element name="since"></xsd:element>
+</xsd:schema>

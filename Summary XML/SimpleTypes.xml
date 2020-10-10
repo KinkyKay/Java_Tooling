@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="PersonName">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:minLength value="1"/>
+                <xsd:maxLength value="10"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:simpleType name="bankAccountType">
+        <xsd:union>
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:pattern value="[A-Z]{2}[0-9]{16}"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="Onbekend"/>
+                    <xsd:enumeration value="Inconnu"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:union>
+    </xsd:simpleType>
+
+    <xsd:element name="BankAccount" type="bankAccountType"/>
+
+    <xsd:simpleType name="LeuvenTelephoneType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="016/[0-9]{6}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

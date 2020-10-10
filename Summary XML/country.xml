@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<country
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="country.xsd">
+    <countryName>Belgium</countryName>
+    <continent>Europe</continent>
+    <countryLeader>
+        <title>King</title>
+        <name>Philippe/Filip</name>
+        <since>2013-07-21</since>
+    </countryLeader>
+    <countryLeader>
+        <title>Primeminister</title>
+        <firstName>Charles</firstName>
+        <lastName>Michel</lastName>
+        <since>2014-10-11</since>
+    </countryLeader>
+</country>

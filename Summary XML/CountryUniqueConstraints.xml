@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<countryUniqueConstraints xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:noNamespaceSchemaLocation="countryUniqueConstraints.xsd">
+    <countryName>Belgie</countryName>
+    <countryLeader>
+        <firstName>Albert</firstName>
+        <number>II</number>
+    </countryLeader>
+    <countryLeader>
+        <firstName>Albert</firstName>
+        <number>I</number>
+    </countryLeader>
+    <countryLeader>
+        <firstName>Boudewijn</firstName>
+        <number>I</number>
+    </countryLeader>
+</countryUniqueConstraints>

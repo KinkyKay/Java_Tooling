@@ -1,0 +1,286 @@
+Git exercise Java tooling
+
+github account: gindesteege@abis.be
+
+repo https://github.com/Gie-Indesteege/DemoJT.git
+
+with readme.md and firstfile.txt
+
+
+local repo: c:\temp\JavaToolProjects\DemoJT
+
+git config --list   
+
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+credential.helper=manager
+core.editor="C:\\Program Files\\Notepad++\\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
+user.email=gindesteege@abis.be
+user.name=Gie
+
+from c:\Temp\JavaToolProjects\
+$ mkdir DemoJT
+$ git clone https://github.com/Gie-Indesteege/DemoJT
+Cloning into 'DemoJT'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+
+$ git checkout -b feature1
+Switched to a new branch 'feature1'
+
+$echo "test project for git" >> readme.md
+$echo "welcome to git" >> hello.txt
+
+$git add hello.txt readme.md
+
+$ git status
+On branch feature1
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello.txt
+        new file:   readme.md
+		
+Modify hello.txt
+
+$ git commit -m "first commit"
+[feature1 (root-commit) d8196ca] first commit
+ 2 files changed, 4 insertions(+)
+ create mode 100644 hello.txt
+ create mode 100644 readme.md
+
+$ git status
+On branch feature1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.txt
+
+$ git push origin feature1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 402 bytes | 201.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/Gie-Indesteege/DemoJT
+ * [new branch]      feature1 -> feature1	
+ 
+create company.txt  
+create support.txt
+
+$ git add .
+
+$ git status
+On branch feature1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   company.txt
+        modified:   hello.txt
+        new file:   support.txt
+
+$ git rm --cached company.txt
+rm 'company.txt'
+
+$ git status
+On branch feature1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.txt
+        new file:   support.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        company.txt
+
+$ git commit -m "second commit"
+[feature1 75406cf] second commit
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+ create mode 100644 support.txt
+
+$ git log
+commit 75406cf0c347d1a96cc7b54d79a2ad51a3163699 (HEAD -> feature1)
+Author: Gie <gindesteege@abis.be>
+Date:   Tue Sep 8 13:55:30 2020 +0200
+
+    second commit
+
+commit d8196caa1a20b709e3a16e8ef2bae694e6af62d4 (origin/feature1)
+Author: Gie <gindesteege@abis.be>
+Date:   Tue Sep 8 12:21:58 2020 +0200
+
+    first commit
+
+$ git commit --amend -m "better second commit"
+[feature1 5df031f] better second commit
+ Date: Tue Sep 8 13:55:30 2020 +0200
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+ create mode 100644 support.txt
+
+$ git revert head --no-edit
+[feature1 7b08cae] Revert "better second commit"
+ Date: Tue Sep 8 14:06:11 2020 +0200
+ 2 files changed, 1 insertion(+), 9 deletions(-)
+ delete mode 100644 support.txt
+
+$ git log
+commit 7b08caec4c8db97c3bfb24fbc4c29238a266935b (HEAD -> feature1)
+Author: Gie <gindesteege@abis.be>
+Date:   Tue Sep 8 14:06:11 2020 +0200
+
+    Revert "better second commit"
+
+    This reverts commit 5df031f306ec5d7a553c34815f0f646d3e3f12f0.
+
+commit 5df031f306ec5d7a553c34815f0f646d3e3f12f0
+Author: Gie <gindesteege@abis.be>
+Date:   Tue Sep 8 13:55:30 2020 +0200
+
+    better second commit
+
+commit d8196caa1a20b709e3a16e8ef2bae694e6af62d4 (origin/feature1)
+Author: Gie <gindesteege@abis.be>
+Date:   Tue Sep 8 12:21:58 2020 +0200
+
+    first commit
+
+$ git revert head --no-edit
+[feature1 591d1fc] Revert "Revert "better second commit""
+ Date: Tue Sep 8 14:10:33 2020 +0200
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+ create mode 100644 support.txt
+
+$ git log
+commit 591d1fca1bef882b45a151c10f7ade66ad734dbd (HEAD -> feature1)
+Author: Gie <gindesteege@abis.be>
+Date:   Tue Sep 8 14:10:33 2020 +0200
+
+    Revert "Revert "better second commit""
+
+    This reverts commit 7b08caec4c8db97c3bfb24fbc4c29238a266935b.
+
+commit 7b08caec4c8db97c3bfb24fbc4c29238a266935b
+Author: Gie <gindesteege@abis.be>
+Date:   Tue Sep 8 14:06:11 2020 +0200
+
+    Revert "better second commit"
+
+    This reverts commit 5df031f306ec5d7a553c34815f0f646d3e3f12f0.
+
+commit 5df031f306ec5d7a553c34815f0f646d3e3f12f0
+Author: Gie <gindesteege@abis.be>
+Date:   Tue Sep 8 13:55:30 2020 +0200
+
+    better second commit
+
+commit d8196caa1a20b709e3a16e8ef2bae694e6af62d4 (origin/feature1)
+Author: Gie <gindesteege@abis.be>
+Date:   Tue Sep 8 12:21:58 2020 +0200
+
+    first commit
+
+$ git add company.txt
+
+$ git commit -m "third commit"
+[feature1 c2c74c9] third commit
+ 1 file changed, 9 insertions(+)
+ create mode 100644 company.txt
+
+$ git reset --soft head~1
+
+$ git push origin feature1                                                                                     Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 792 bytes | 792.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Gie-Indesteege/DemoJT
+   d8196ca..591d1fc  feature1 -> feature1
+
+$ git checkout -b feature2
+Switched to a new branch 'feature2'
+A       company.txt
+
+$ git log
+commit 591d1fca1bef882b45a151c10f7ade66ad734dbd (HEAD -> feature2, origin/feature1, feature1)
+
+$ git branch
+  feature1
+* feature2
+
+$ git branch -d feature1                                                                                       Deleted branch feature1 (was 591d1fc).
+
+$ git push origin :feature1
+To https://github.com/Gie-Indesteege/DemoJT
+ ! [remote rejected] feature1 (refusing to delete the current branch: refs/heads/feature1)
+error: failed to push some refs to 'https://github.com/Gie-Indesteege/DemoJT'
+IF feature1 is default branch!
+
+
+$ git push origin :feature1
+To https://github.com/Gie-Indesteege/DemoJT
+ - [deleted]         feature1
+
+$ git checkout master
+Switched to branch 'master'
+A       company.txt
+Your branch is up to date with 'origin/master'.
+
+
+$ echo "new hello to everybody" >> hello.txt
+
+$ git add hello.txt
+
+$ git commit -m "fourth commit"
+
+$ git merge feature2
+CONFLICT (add/add): Merge conflict in hello.txt
+Auto-merging hello.txt
+Automatic merge failed; fix conflicts and then commit the result. 
+
+
+resolve conflict inside file
+
+$ git add hello.txt
+$ git commit -m "merge conflict solved"
+
+create secret.txt
+
+create  .gitignore  (with line: secret.txt)
+
+$ git add .
+
+$ git commit -m "ignored (secret) files"  
+$ git push origin master
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (22/22), 2.20 KiB | 562.00 KiB/s, done.
+Total 22 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/Gie-Indesteege/DemoJT
+   866d1ce..11ef1e7  master -> master
+   
+$ git add future/niceFeatures.txt
+
+
+$ git commit -m "future commit"
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MixedContentCountry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:noNamespaceSchemaLocation="MixedContent.xsd"
+                     countryCode="BE">
+    "To be or not to be" said king <king>Philippe</king>to king
+    <king>Lear</king>while taking a bite out of a juicy <fruit>apple</fruit>
+</MixedContentCountry>

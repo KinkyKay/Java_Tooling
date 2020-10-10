@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abis="www.abis.be" targetNamespace="www.abis.be" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:element name="CompaniesAndPersons">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="PersonList">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Person" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element ref="abis:Name"/>
+										<xsd:element name="Function"/>
+									</xsd:sequence>
+									<xsd:attribute name="PersonId"/>
+									<xsd:attribute name="CompanyId"/>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="CompanyList">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element ref="abis:Company" maxOccurs="unbounded"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Name">
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:sequence>
+					<xsd:element name="LastName"/>
+					<xsd:element name="FirstName" maxOccurs="3"/>
+				</xsd:sequence>
+				<xsd:sequence>
+					<xsd:element name="FirstName" maxOccurs="3"/>
+					<xsd:element name="LastName"/>
+				</xsd:sequence>
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Company">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="CompanyName"/>
+				<xsd:element name="CompanyAddress"/>
+			</xsd:sequence>
+			<xsd:attribute name="CompanyId"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
