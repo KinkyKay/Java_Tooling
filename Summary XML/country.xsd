@@ -2,7 +2,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <xsd:element name="country" type="xsd:string">
         <xsd:complexType><xsd:sequence>
-            <xsd:element name="countryName"/>
+            <xsd:element name="countryName" type="xsd:string"/>
             <xsd:element name="continent"/>
             <xsd:element name="countryLeader">
                 <xsd:complexType><xsd:sequence>
@@ -19,7 +19,7 @@
             </xsd:element>
         </xsd:sequence></xsd:complexType>
     </xsd:element>
-    <xsd:element name="title"></xsd:element>
-    <xsd:element name="name"></xsd:element>
-    <xsd:element name="since"></xsd:element>
+    <xsd:element name="title"/>
+    <xsd:element name="name"/>
+    <xsd:element name="since"/>
 </xsd:schema>

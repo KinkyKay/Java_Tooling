@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<continent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="Continent.xsd">
+    <continentName>Europe</continentName>
+    <country>
+        <countryName>Belgium</countryName>
+    </country>
+    <country>
+        <countryName>The Netherlands</countryName>
+    </country>
+    <country>
+        <countryName>Luxemburg</countryName>
+    </country>
+    <countryLeader>
+        <countryLeaderName>Willem II</countryLeaderName>
+        <countryLeaderCountry>The Netherlands</countryLeaderCountry>
+    </countryLeader>
+    <countryLeader>
+        <countryLeaderName>Albert II</countryLeaderName>
+        <countryLeaderCountry>Belgium</countryLeaderCountry>
+    </countryLeader>
+    <countryLeader>
+        <countryLeaderName>Boudewijn</countryLeaderName>
+        <countryLeaderCountry>Belgium</countryLeaderCountry>
+    </countryLeader>
+</continent>
