@@ -1,7 +1,7 @@
-package Excersises.Test;
+package excercises.test;
 
-import Excersises.Java.Course;
-import Excersises.Java.Session;
+import excercises.java.Course;
+import excercises.java.Session;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

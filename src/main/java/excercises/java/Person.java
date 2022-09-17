@@ -1,4 +1,4 @@
-package Excersises.Java;
+package excercises.java;
 
 public class Person {
 
